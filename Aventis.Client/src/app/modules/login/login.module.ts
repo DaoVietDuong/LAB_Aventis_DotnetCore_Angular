@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent} from './components/login.component';
 import { LoginRouteModule } from './login-route.module';
 import { LoginPage } from './pages/login.page';
+import { LoginService } from './login.service';
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { LoginPage } from './pages/login.page';
     CommonModule,
     LoginRouteModule
   ],
-  declarations: [LoginComponent, LoginPage]
+  declarations: [LoginComponent, LoginPage],
+  providers: [LoginService]
 })
 export class LoginModule { 
   
