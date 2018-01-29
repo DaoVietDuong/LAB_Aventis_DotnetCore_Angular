@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { NotFoundPage } from './shared/pages/not-found/not-found.page';
 
 const appRoutes: Routes = [
   { path: '',
     redirectTo: '/login',
     pathMatch: 'full'
   },
- // { path: '**', component: PageNotFoundComponent }
+  { path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },  
+  { path: '**', component: NotFoundPage }
 ];
 
 
@@ -20,7 +25,7 @@ const appRoutes: Routes = [
     )
   ],
   exports: [ RouterModule ],
-  declarations: []
+  declarations: [NotFoundPage]
 })
 
 export class AppRoutingModule { }

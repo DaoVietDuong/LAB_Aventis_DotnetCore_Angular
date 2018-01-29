@@ -5,7 +5,6 @@ import { LoginRouteModule } from './login-route.module';
 import { LoginPage } from './pages/login.page';
 import { LoginService } from './login.service';
 
-
 @NgModule({
   imports: [
     CommonModule,

@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginPage } from './pages/login.page';
-
+import { HomePage } from './pages/home.page';
 
 const appRoutes: Routes = [
-  { path: 'login',  component: LoginPage}
+  { path: 'home',  component: HomePage}
  // { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -19,6 +18,6 @@ const appRoutes: Routes = [
   exports: [ RouterModule ],
   declarations: []
 })
-export class LoginRouteModule {
+export class HomeRouteModule {
 
  }
