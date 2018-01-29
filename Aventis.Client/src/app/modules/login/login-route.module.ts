@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginPage } from './pages/login.page';
 
 
-const appRoutes: Routes = [
+const loginRoutes: Routes = [
   { path: 'login',  component: LoginPage}
  // { path: '**', component: PageNotFoundComponent }
 ];
@@ -13,7 +13,7 @@ const appRoutes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forRoot(
-      appRoutes
+      loginRoutes
     )
   ],
   exports: [ RouterModule ],

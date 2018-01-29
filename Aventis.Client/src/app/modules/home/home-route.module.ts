@@ -2,17 +2,25 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './pages/home.page';
+import { ButtonTestComponent } from './components/button-test/button-test.component';
 
-const appRoutes: Routes = [
-  { path: 'home',  component: HomePage}
- // { path: '**', component: PageNotFoundComponent }
+const homeRoutes: Routes = [
+  { path: 'home',  
+  component: HomePage, 
+  
+  children: [
+    {
+      path: 'test',  
+    component: ButtonTestComponent
+    }
+    ]}
 ];
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forRoot(
-      appRoutes
+      homeRoutes
     )
   ],
   exports: [ RouterModule ],
