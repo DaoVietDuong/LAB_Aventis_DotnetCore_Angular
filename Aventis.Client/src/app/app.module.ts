@@ -19,10 +19,10 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     BrowserModule,
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
-    ModalModule.forRoot(),    
-    AppRoutingModule,
+    ModalModule.forRoot(),   
     LoginModule,
-    HomeModule
+    HomeModule,    
+    AppRoutingModule //must be order
   ],
   providers: [],
   bootstrap: [AppComponent]

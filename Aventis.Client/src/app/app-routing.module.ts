@@ -12,7 +12,16 @@ const appRoutes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full'
   },  
-  { path: '**', component: NotFoundPage }
+  {
+    path: '404', 
+    component: NotFoundPage
+    
+  },
+   {
+     path: '**', 
+     redirectTo: '/404'
+     
+   }
 ];
 
 
